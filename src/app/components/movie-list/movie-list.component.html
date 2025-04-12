@@ -1,0 +1,36 @@
+<h2 class="tagline">Find your new favourite flic...</h2>
+  
+<div class="search-bar">
+    <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    (input)="searchMovies()"
+    placeholder="Search moovee..."
+  />
+  <span class="search-icon">🔍</span>
+</div>
+
+<div class="movie-grid">
+    <div
+      class="movie-card"
+      [ngClass]="getBorderColorClass(movie.Rating)"
+      *ngFor="let movie of filteredMovies"
+      (click)="goToDetail(movie.Title)">
+      <img class="poster" [src]="movie['Image URL']" [alt]="movie.Title" />
+      <div class="movie-info">
+        <div class="movie-meta">
+          <span class="year">{{ movie.Year }}</span>
+          <span class="rating" [ngClass]="getRatingClass(movie.Rating)">
+            {{ movie.Rating }}
+          </span>
+        </div>
+        <h3 class="title">{{ movie.Title }}</h3>
+        <div class="genres">
+          <span *ngFor="let genre of movie.Genres.split(',')" class="genre">
+            {{ genre.trim() }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  

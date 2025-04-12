@@ -1,0 +1,81 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid;
+  position: fixed;
+  width: 97%;
+  z-index: 99;
+  top: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-slash {
+  margin-right: 0.5rem;
+  height: 80px;
+  margin-bottom: -2rem;
+}
+.logo-slash-footer {
+  height: 280px;
+  margin-right: -8rem;
+  margin-top: -8rem;
+}
+
+.logo-text {
+  height: 28px;
+}
+
+.avatar {
+  height: 32px;
+  border-radius: 50%;
+}
+.footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 40px 20px 0;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  border-top: 1px solid;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.last-section{
+  padding-bottom: 40px;
+}
+
+.footer-section h4 {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-family: 'Pacifico', cursive;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}

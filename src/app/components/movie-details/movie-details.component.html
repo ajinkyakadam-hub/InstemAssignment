@@ -1,0 +1,11 @@
+<div *ngIf="movie" class="movie-detail">
+  <img [src]="movie['Image URL']" alt="{{ movie.Title }}">
+  <h2>{{ movie.Title }} ({{ movie.Year }})</h2>
+  <p><strong>Director:</strong> {{ movie.Directors }}</p>
+  <p><strong>Release Date:</strong> {{ movie['Release Date'] | date }}</p>
+  <p><strong>Rating:</strong> {{ movie.Rating }}</p>
+  <p><strong>Genres:</strong> {{ movie.Genres }}</p>
+  <p><strong>Actors:</strong> {{ movie.Actors }}</p>
+  <p><strong>Plot:</strong> {{ movie.Plot }}</p>
+  <p><strong>Running Time:</strong> {{ movie['Running Time (secs)'] / 60 }} minutes</p>
+</div>
