@@ -46,6 +46,5 @@ export class MovieListComponent implements OnInit{
   getBorderColorClass(rating: number): string {
     return `border-${this.getRatingClass(rating)}`;
   }
-  
 }
 

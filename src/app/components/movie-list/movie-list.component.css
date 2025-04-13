@@ -1,6 +1,6 @@
 .movie-card {
   width: 200px;
-  background: #1e1e1e;
+  background: #1E1E1E;
   border-radius: 1.5rem;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -47,7 +47,7 @@
   top: 210px;
   right: 0;
   transform: translate(50%, -50%);
-  background-color: #f26a6a;
+  background-color: #FE797B;
   color: white;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;

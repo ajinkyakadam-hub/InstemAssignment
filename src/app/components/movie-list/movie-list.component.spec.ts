@@ -3,7 +3,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MovieListComponent } from './movie-list.component';
 import { MovieService } from '../../services/movie.service';
 import { Router } from '@angular/router';
-import { of } from 'rxjs';
 import { Movie } from '../../models/movie.model';
 
 describe('MovieListComponent', () => {
@@ -62,7 +61,7 @@ describe('MovieListComponent', () => {
   });
 
   it('should navigate to movie detail on goToDetail', () => {
-    const title = 'Inception';
+    const title = 'Hamlet';
     component.goToDetail(title);
     expect(mockRouter.navigate).toHaveBeenCalledWith(['/movie', title]);
   });

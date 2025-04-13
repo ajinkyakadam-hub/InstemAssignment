@@ -7,5 +7,5 @@
   <p><strong>Genres:</strong> {{ movie.Genres }}</p>
   <p><strong>Actors:</strong> {{ movie.Actors }}</p>
   <p><strong>Plot:</strong> {{ movie.Plot }}</p>
-  <p><strong>Running Time:</strong> {{ movie['Running Time (secs)'] / 60 }} minutes</p>
+  <p><strong>Running Time:</strong> {{ (movie['Running Time (secs)'] / 60).toFixed(2) }} minutes</p>
 </div>
